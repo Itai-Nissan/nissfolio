@@ -1,0 +1,126 @@
+.btn-basic {
+  background: $cta;
+  font-weight: bold;
+  color: #ffffff;
+  height: 32px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-basic:hover {
+  background: $cta2;
+}
+
+.btns-container {
+  display: flex;
+  align-items: center;
+}
+
+.btn-basic-2 {
+  min-width: 60px;
+  border: 1px solid #7a8288;
+  font-weight: bold;
+  color: #7a8288;
+  height: 32px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-basic-2:hover {
+  transition: 0.2s;
+  background: $cta;
+  color: $backColor
+}
+
+.btn-basic-3 {
+  min-width: 60px;
+  border: none;
+  background-color: $backColor2;
+  font-weight: bold;
+  color: #7a8288;
+  height: 32px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-basic-3:hover {
+  transition: 0.2s;
+  background: $cta;
+  color: $backColor
+}
+
+.btn-basic-4 {
+  min-width: 60px;
+  // border: none;
+  border: 1px solid #7a8288;
+
+  background-color: $backColor2;
+  font-weight: bold;
+  color: #7a8288;
+  height: 32px;
+  padding: 8px 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-basic-4:hover {
+  transition: 0.2s;
+  color: $clr4
+}
+
+.btn-basic-5 {
+  min-width: 60px;
+  border: 1px solid #7a8288;
+  font-weight: bold;
+  color: #7a8288;
+  height: 22px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-basic-5:hover {
+  transition: 0.2s;
+  background: $cta;
+  color: $backColor
+}
+
+
+.login-btn {
+  min-width: 60px;
+  border: 1px solid $cta;
+  color: $cta;
+  padding: 8px 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-btn:hover {
+  transition: 0.2s;
+  border: 1px solid $clr4;
+  color: $clr4;
+}
+
+.create-btn {
+  text-align: center;
+  padding: 1em;
+  color: $clr4;
+  background-image: linear-gradient(#3a3f44, #17191b 40%, #282c2f);
+  border-color: #3a3f44;
+  background-color: #282c2f;
+}

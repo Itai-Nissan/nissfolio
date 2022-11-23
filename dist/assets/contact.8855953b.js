@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as o,a as c}from"./index.e3925853.js";const s={name:"contact",mounted(){document.body.style.backgroundImage="url('../src/assets/images/pexels-kyle-roxas-2138922.jpg')"}},a={class:"contact container"},n=c("h1",null,"contact",-1),r=[n];function _(d,l,i,p,m,u){return e(),o("section",a,r)}const h=t(s,[["render",_]]);export{h as default};

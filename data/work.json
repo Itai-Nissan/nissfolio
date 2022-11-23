@@ -1,0 +1,35 @@
+[
+    {
+        "_id": "1",
+        "title": "quiderr",
+        "category": "word-press",
+        "tech": {
+            "frontend": "vue",
+            "backend": "nodejs",
+            "data": "mongodb"
+        },
+        "url": "https: //quiderr.onrender.com/#/",
+        "vidUrl": "../src/assets/vids/work/quiderr_present.mp4",
+        "imgUrl": "../src/assets/images/work/quiderr-homepage.jpg"
+    },
+    {
+        "_id": "2",
+        "title": "free-to-game",
+        "category": "manage-account",
+        "tech": {
+            "frontend": "vue"
+        },
+        "url": "https: //itai-nissan.github.io/free-to-game/",
+        "imgUrl": "../src/assets/images/work/free-to-game-homepage.jpg"
+    },
+    {
+        "_id": "3",
+        "title": "mister-bit",
+        "category": "digital-wallet",
+        "tech": {
+            "frontend": "angular"
+        },
+        "url": "https: //itai-nissan.github.io/Mister-Bit-Ang/signup",
+        "imgUrl": "../src/assets/images/work/mister-bit-homepage.jpg"
+    }
+]
