@@ -23,7 +23,7 @@
                     <h4>Visit site</h4>
                 </div>
                 <div class="url">
-                    <a :href="currentWork.url" target="_blank">URL: {{ currentWork.url }}</a>
+                    <a :href="currentWork.url" target="_blank">FreeToGame</a>
                 </div>
             </div>
         </div>
