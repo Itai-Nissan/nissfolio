@@ -8,7 +8,7 @@
                 <v-list nav dense>
                     <v-list-item-group v-model="group">
                         <nav>
-                            <ul v-if="pages" v-for="page in pages" :key="page">
+                            <ul v-for="page in pages" v-if="pages" :key="page">
                                 <RouterLink :to="page.url">// {{ page.name }}</RouterLink>
                             </ul>
                         </nav>
@@ -29,13 +29,13 @@ export default {
             required: true
         }
     },
-    computed: {
-    },
     data() {
         return {
             drawer: false,
             group: null,
         }
+    },
+    computed: {
     },
     watch: {
         group() {

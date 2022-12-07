@@ -17,10 +17,8 @@ import DropDownMenu from './dropdown.cmp.vue'
 
 export default {
     name: 'AppHeader',
-    computed: {
-        bindNavClass() {
-            return this.$store.getters.currentNavClass
-        }
+    components: {
+        DropDownMenu,
     },
     data() {
         return {
@@ -44,10 +42,12 @@ export default {
             ],
         }
     },
-    watch: {
+    computed: {
+        bindNavClass() {
+            return this.$store.getters.currentNavClass
+        }
     },
-    components: {
-        DropDownMenu,
+    watch: {
     },
 
 }

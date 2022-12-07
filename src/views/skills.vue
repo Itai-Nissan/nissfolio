@@ -5,7 +5,7 @@
     <section class="skills container">
         <h1>My Skills</h1>
         <section class="skills-table">
-            <div v-for="skill in skills" class="skiil-preview-container" :key="skill._id">
+            <div v-for="skill in skills" :key="skill._id" class="skiil-preview-container">
                 <skill-preview :skill="skill"></skill-preview>
             </div>
         </section>

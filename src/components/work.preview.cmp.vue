@@ -41,8 +41,6 @@ export default {
     data: () => ({
         expand: false,
     }),
-    methods: {
-    },
     computed: {
         workTitle() {
             const str = this.work.title
@@ -52,6 +50,8 @@ export default {
             const str = this.work.category
             return str.charAt(0).toUpperCase() + str.slice(1).replaceAll('-', ' ')
         }
+    },
+    methods: {
     },
 }
 </script>
