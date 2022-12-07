@@ -1,4 +1,4 @@
-import works from '../../data/work.json' assert {type: 'json'}
+import works from '../../data/work.json'
 
 export default {
     loadWorks,

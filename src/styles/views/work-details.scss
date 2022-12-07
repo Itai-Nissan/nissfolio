@@ -2,14 +2,22 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-    h3 {
-        font-size: 20px;
+    color: $details-nav;
+    z-index: 180;
+
+
+    h1 {
+        font-size: 80px;
         font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
     }
 
-    h2 {
-        font-size: 80px;
+    h3 {
+        font-size: 1.2em;
+        font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
+    }
+
+    h4 {
+        font-size: 2em;
         font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
     }
 
@@ -27,7 +35,20 @@
 
     .work-details-tech {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+
+        .card {
+            align-items: center;
+            flex-direction: column;
+            width: 40%;
+            justify-content: space-evenly;
+            border-width: 2px;
+            border-color: #a3a3a3;
+            border-style: solid;
+            border-radius: 50px 7px 50px 7px;
+            background-color: $details-nav-back;
+            margin-block-end: 1em;
+        }
 
         .specs {
             display: flex;
@@ -45,20 +66,137 @@
             .url {
                 margin-inline-start: 1em;
             }
+
             .url:hover {
                 text-shadow: 1px 3px 11px rgb(0 0 0 / 30%);
-                color: $clr2;
+                color: $details-nav-hover;
             }
         }
     }
 
     .work-details-media {
-        width: 100%;
 
-        img {
-            width: 100%;
-            border-radius: 3px;
+        video {
+            width: 48.2%;
+            margin-block-end: 1em;
         }
+
+        .details-carousel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            .v-window {
+                height: 500px;
+                width: 1000px;
+                margin-block-end: 2em;
+
+                .v-btn {
+                    height: calc(var(--v-btn-height) + 12px);
+                    width: calc(var(--v-btn-height) + 12px);
+                }
+            }
+
+            .v-carousel__controls {
+                .v-btn {
+                    background-color: #fdf6ad46;
+                    color: #ffffff;
+                }
+            }
+
+            .v-btn {
+                background-color: #fdf6ad;
+
+                .mdi-chevron-right {
+                    color: black;
+                }
+            }
+
+            img {
+                border-radius: 7px;
+            }
+        }
+
     }
 
+}
+
+@media screen and (max-width: 1140px) {}
+
+@media screen and (max-width: 990px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 575px) {
+    .work-details {
+
+        h1 {
+            font-size: 2.2em;
+            margin-block-end: .5em;
+        }
+
+        p {
+            font-size: 1.9em;
+        }
+
+        a {
+            font-size: 1.5em;
+        }
+
+        .work-details-header {
+            margin-block-end: 0em;
+        }
+
+        .work-details-tech {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-block-end: 2em;
+
+            .card {
+                margin-block-end: 4em;
+                width: 100%;
+            }
+
+            .specs {
+                padding: 0px 15px;
+                font-size: .5em;
+            }
+
+            .specs-url {
+                padding: 0px 15px;
+                font-size: .5em;
+                margin-block-end: 1em;
+            }
+        }
+
+        .work-details-media {
+            display: block;
+            flex-direction: column;
+            
+            .details-carousel {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                
+                video {
+                    width: 100%;
+                }
+                
+                .v-window {
+                    width: 100%;
+                    margin-block-end: 2em;
+
+                    .v-btn {
+                        height: calc(var(--v-btn-height) - 15px);
+                        width: calc(var(--v-btn-height) - 15px);
+                    }
+                }
+            }
+        }
+    }
 }

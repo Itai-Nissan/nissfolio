@@ -12,11 +12,14 @@
 
 // COMPONENTS
 @import 'cmps/app-header.scss';
+@import 'cmps/work/work.list.cmp.scss';
+@import 'cmps/work/work.preview.cmp.scss';
 
 
 // VIEWS
 @import 'views/home-page.scss';
 @import 'views/skills.scss';
+@import 'views/contact.scss';
 @import 'views/work.scss';
 @import 'views/work-details.scss';
 

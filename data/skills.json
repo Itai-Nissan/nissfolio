@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Frontend",
+        "icons": [
+            "vuejs",
+            "react",
+            "angularjs"
+        ],
+        "desc": "Knowledge and experience writing single-page-applications using Vue.js, React.js and Angular. state managment such as vite, Redux and NgRx, and libraries such as bootstrap, vutify, element plus, and more"
+    },
+    {
+        "title": "Backend",
+        "icons": [
+            "nodejs"
+        ],
+        "desc": "Experience with building apps using nodejs, and libraries such as expressjs and parser"
+    },
+    {
+        "title": "Data-base",
+        "icons": [
+            "database"
+        ],
+        "desc": "Store and manage data using mongoDb and sql"
+    }
+]

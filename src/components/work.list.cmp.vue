@@ -1,23 +1,25 @@
 <template>
     <section>
         <div v-if="works" class="work-list clean-list">
-            <li v-for="work in works" class="" :key="work._id">
-                <work-preview :work="work" />
+            <li v-for="work in works" :key="work._id" class="">
+                <work-preview :work="work"/>
             </li>
         </div>
     </section>
 </template>
 
 <script>
-import WorkPreview from './work.preview.vue';
-import workPreview from './work.preview.vue'
+import WorkPreview from './work.preview.cmp.vue';
 export default {
-    name: 'works',
-    props: {
-        works: Array
-    },
+    name: 'WorkList',
     components: {
-        workPreview,
+        WorkPreview,
+    },
+    props: {
+        works:{
+            type: Array,
+            required: true
+        }
     },
 }
 </script>

@@ -1,56 +1,45 @@
 <template>
-    <div class="skills container">
+    <div class="bg-image">
+        <img src="../assets/images/pexels-pixabay-258109.jpg" alt="">
+    </div>
+    <section class="skills container">
         <h1>My Skills</h1>
         <section class="skills-table">
-            <div v-for="skill in skills">
-                <section @click="openModal()" :class="{ 'open-modal': isOpen, 'close-modal': !isOpen }"
-                    class="skills-card">
-                    <div class="card-header">
-                        <h5>{{ skill.title }}</h5>
-                    </div>
-                    <div class="card-footer">
-                        <p>{{ skill.desc }}</p>
-                    </div>
-                </section>
+            <div v-for="skill in skills" class="skiil-preview-container" :key="skill._id">
+                <skill-preview :skill="skill"></skill-preview>
             </div>
         </section>
-    </div>
+    </section>
 </template>
-
 <script>
+import skillPreview from '../components/skill.preview.cmp.vue'
+
 export default {
-    name: 'skills',
+    name: 'NissfolilSkills',
+    components: {
+        skillPreview
+    },
     data() {
         return {
-            isOpen: false,
-            skills: [
-                {
-                    title: 'Fronend // Fullstack',
-                    desc: 'Experience with both nextjs & nuxtjus'
-                },
-                {
-                    title: 'Fronend // Fullstack',
-                    desc: 'Experience with both nextjs & nuxtjus'
-                },
-                {
-                    title: 'Fronend // Fullstack',
-                    desc: 'Experience with both nextjs & nuxtjus'
-                },
-            ]
+            navClass: 'skills-nav',
+            skills: null,
         }
     },
+    created() {
+        this.onGetSkills()
+        this.onSetNavClass(this.navClass)
+    },
     mounted() {
-        document.body.style.backgroundImage = "url('../src/assets/images/pexels-pixabay-258109.jpg')"
+        // document.body.style.backgroundImage = "url('../src/assets/images/pexels-pixabay-258109.jpg')"
     },
     methods: {
-        openModal() {
-            this.isOpen = !this.isOpen
-            console.log(this.isOpen);
+        onGetSkills() {
+            this.$store.dispatch('getSkills')
+            this.skills = this.$store.getters.skills
         },
-    }
+        onSetNavClass(navClass) {
+            this.$store.dispatch({ type: 'setNavClass', navClass })
+        }
+    },
 }
 </script>
-
-<style>
-
-</style>

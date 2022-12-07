@@ -1,26 +1,20 @@
-.app{
+.app {
     display: flex;
     justify-content: center;
-
+    
     .main-app {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        // grid-template-rows: 5vh 90vh 5vh;
-        justify-items: center;
-    
     }
 }
 
 .container {
     width: 1300px;
 
+    @include from-mini-layout {}
 
-    @include from-mini-layout {
-    }
-
-    @include from-mobile-layout {
-    }
+    @include from-mobile-layout {}
 }
 
 @media screen and (max-width: 1140px) {
@@ -40,13 +34,10 @@
     .container {
         width: 545px;
     }
-
 }
 
 @media screen and (max-width: 575px) {
     .container {
         width: 345px;
-        // background-color: red;
     }
-
 }

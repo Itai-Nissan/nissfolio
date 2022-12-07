@@ -1,6 +1,5 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router'
-import AppHeader from './components/app.header.vue'
+import AppHeader from './components/app.header.cmp.vue'
 
 export default {
   components: {
@@ -9,15 +8,9 @@ export default {
     // userMsg,
   },
   created() {
-        this.onGetWorks()
-    },
-    methods: {
-        onGetWorks() {
-            this.$store.dispatch('getWorks')
-            console.log(this.works)
-        }
-    },
-
+  },
+  methods: {
+  },
 }
 </script>
 
@@ -26,7 +19,7 @@ export default {
 
     <section class="main-app container">
       <app-header />
-      <RouterView class="router-view" />
+      <RouterView/>
     </section>
   </div>
 </template>
