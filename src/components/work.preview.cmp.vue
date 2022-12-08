@@ -6,7 +6,7 @@
                     <h3>{{ workTitle }}</h3>
                 </div>
                 <div class="title-img">
-                    <img :src="work.images[0]" alt="">
+                    <img :src="work.mainImg" alt="">
                 </div>
             </v-btn>
         </div>
@@ -14,7 +14,7 @@
             <section v-show="expand" class="secondary work-preview">
                 <Router-link :to="`/work-details/${work._id}`">
                     <div class="work-card" outlined>
-                        <img class="" :src=work.images[0]>
+                        <img class="" :src=work.mainImg>
                         <div class="card-info">
                             <v-card-title>{{ workTitle }}</v-card-title>
                             <div class="info-text-card">

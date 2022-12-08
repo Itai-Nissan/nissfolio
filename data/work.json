@@ -9,11 +9,14 @@
             "data": "mongodb"
         },
         "url": "https://quiderr.onrender.com/#/",
-        "vidUrl": "/assets/vids/work/quiderr_present.mp4",
+        "vidUrl": "assets/vids/work/quiderr_present.mp4",
+        "mainImg": "assets/images/work/quiderr/quiderr-homepage.jpg",
         "images": [
-            "/assets/images/work/quiderr-homepage.jpg",
-            "/assets/images/work/free-to-game-homepage.jpg",
-            "/assets/images/work/mister-bit-homepage.jpg"
+            "assets/images/work/quiderr/quiderr_home.jpg",
+            "assets/images/work/quiderr/quiderr_explore.jpg",
+            "assets/images/work/quiderr/quiderr_gig_details.jpg",
+            "assets/images/work/quiderr/quiderr_gig_purchase.jpg",
+            "assets/images/work/quiderr/quiderr_user_page2.jpg"
         ]
     },
     {
@@ -24,10 +27,14 @@
             "frontend": "vue"
         },
         "url": "https://itai-nissan.github.io/free-to-game/",
+        "mainImg": "assets/images/work/free-to-game/free-to-game-homepage.jpg",
         "images": [
-            "/assets/images/work/free-to-game-homepage.jpg",
-            "/assets/images/work/quiderr-homepage.jpg",
-            "/assets/images/work/mister-bit-homepage.jpg"
+            "assets/images/work/free-to-game/freeToGame_user_home.jpg",
+            "assets/images/work/free-to-game/freeToGame_user.jpg",
+            "assets/images/work/free-to-game/freeToGame_login.jpg",
+            "assets/images/work/free-to-game/freeToGame_list.jpg",
+            "assets/images/work/free-to-game/freeToGame_home.jpg",
+            "assets/images/work/free-to-game/freeToGame_details.jpg"
         ]
     },
     {
@@ -38,10 +45,12 @@
             "frontend": "angular"
         },
         "url": "https://itai-nissan.github.io/Mister-Bit-Ang/signup",
+        "mainImg": "assets/images/work/mister-bit/mister-bit-homepage.jpg",
         "images": [
-            "/assets/images/work/mister-bit-homepage.jpg",
-            "/assets/images/work/quiderr-homepage.jpg",
-            "/assets/images/work/free-to-game-homepage.jpg"
+            "assets/images/work/mister-bit/misterBit_user_home.jpg",
+            "assets/images/work/mister-bit/misterBit_statistics.jpg",
+            "assets/images/work/mister-bit/misterBit_moves.jpg",
+            "assets/images/work/mister-bit/misterBit_home.jpg"
         ]
     }
 ]

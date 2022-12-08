@@ -23,16 +23,15 @@
                     <h4>Visit site</h4>
                 </div>
                 <div class="url">
-                    <a :href="currentWork.url" target="_blank">FreeToGame</a>
+                    <a :href="currentWork.url" target="_blank">{{ firstToCap(currentWork.title) }}</a>
                 </div>
             </div>
         </div>
         <div class="work-details-media">
             <section class="details-carousel">
                 <v-carousel show-arrowsshow-arrows-on-hover hide-delimiter-background height="auto">
-                    <v-carousel-item
-v-for="(img, i) in currentWork.images" :key="i" :src="img"
-                    reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+                    <v-carousel-item v-for="(img, i) in currentWork.images" :key="i" :src="img"
+                        reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
                 </v-carousel>
                 <video v-if="currentWork.vidUrl" controls autoplay :src=currentWork.vidUrl></video>
             </section>

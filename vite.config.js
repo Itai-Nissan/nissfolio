@@ -10,6 +10,7 @@ export default defineConfig({
   build: {
     transpile: ['mdi-vue']
   },
+  // assetsInclude: ['**/*.jpg'],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

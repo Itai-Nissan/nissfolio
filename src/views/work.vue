@@ -20,7 +20,6 @@ export default {
     data() {
         return {
             works: null,
-            // works: this.$store.getters.works,
             navClass: 'work-nav',
         }
     },
@@ -29,7 +28,6 @@ export default {
         this.onSetNavClass(this.navClass)
     },
     mounted() {
-        // document.body.style.backgroundImage = "url('../src/assets/images/pexels-pixabay-35796.jpg')"
     },
     methods: {
         onGetWorks() {
