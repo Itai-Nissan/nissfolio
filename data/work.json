@@ -4,8 +4,8 @@
         "title": "quiderr",
         "category": "marketplace",
         "tech": {
-            "frontend": "vue",
-            "backend": "nodejs",
+            "frontend": "vue, vite, element-plus, axios",
+            "backend": "nodejs, expressjs, cryptr",
             "data": "mongodb"
         },
         "url": "https://quiderr.onrender.com/#/",
@@ -24,7 +24,8 @@
         "title": "free-to-game",
         "category": "gaming-website",
         "tech": {
-            "frontend": "vue"
+            "frontend": "vue, vite, sass, element-plus, axios",
+            "data": "API, Json"
         },
         "url": "https://itai-nissan.github.io/free-to-game/",
         "mainImg": "assets/images/work/free-to-game/free-to-game-homepage.jpg",
@@ -42,7 +43,8 @@
         "title": "mister-bit",
         "category": "digital-wallet",
         "tech": {
-            "frontend": "angular"
+            "frontend": "angular, TS, rxjs",
+            "data": "API, Json"
         },
         "url": "https://itai-nissan.github.io/Mister-Bit-Ang/signup",
         "mainImg": "assets/images/work/mister-bit/mister-bit-homepage.jpg",
