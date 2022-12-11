@@ -26,7 +26,7 @@
         }
 
         span {
-            margin-block-end: 1em;
+            // margin-block-end: 1em;
             font-family: RobotoMono-Bold;
             font-weight: 400;
             line-height: 1.4em;
@@ -44,11 +44,12 @@
 
         .contact-card {
             display: flex;
-            max-width: 22%;
+            align-items: center;
+            max-width: 23%;
+            height: 3em;
             border-width: 2px;
             margin-block-end: 1em;
-            padding-inline-start: 1em;
-            padding-block-start: 1em;
+            padding-inline-start: 2em;
             border-color: #a3a3a3;
             border-style: solid;
             border-radius: 50px 7px 50px 7px;
@@ -87,7 +88,7 @@
 
             .contact-card {
                 max-width: 100%;
-                margin-block-end: 0.5em;
+                height: 2.2em;
             }
         }
     }
