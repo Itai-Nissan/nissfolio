@@ -29,69 +29,40 @@
         letter-spacing: -1px;
     }
 
-
-
-    .drop-down {
-        display: none;
-        position: absolute;
-        left: 0;
-        z-index: 1;
-        height: 100%;
-
-        .v-app-bar-nav-icon {
-            margin-block-start: .6em;
-            color: $home-nav;
-            background: none;
-        }
-
-        .v-application {
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: transparent;
-            height: 0;
-
-            .v-application__wrap{
-                min-height: 0;
-            }
-            .v-navigation__wrap{
-                min-height: 0;
-            }
-
-            .drawer {
-                height: 100%;
-                width: 100%;
-            }
-
-
-            .v-navigation-drawer {
-                background-color: $drop-down;
-
-                nav {
-                    display: flex;
-                    flex-direction: column;
-
-                    .router-link-exact-active {
-                        border-bottom: 0.5px solid $details-nav;
-                    }
-                }
-
-                ul {
-                    margin-block-start: 1em;
-                    margin-inline-start: 1em;
-                    font-size: 1.5em;
-                    font-weight: 100;
-                }
-            }
-        }
-    }
-
-
     .header-logo {
         position: absolute;
         right: 0;
         top: 1.2em;
         color: $home-nav;
+    }
+
+    .drop-down {
+        display: none;
+
+        .v-app-bar-nav-icon {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            color: $home-nav;
+            background: none;
+        }
+
+        .v-navigation-drawer {
+
+            nav {
+                flex-direction: column;
+
+                .router-link-exact-active {
+                    border-bottom: 0.5px solid $details-nav;
+                }
+            }
+
+            ul {
+                margin-block-start: 1em;
+                margin-inline-start: 1em;
+                font-size: 1.2em;
+            }
+        }
     }
 
     // HOME NAV
@@ -172,6 +143,7 @@
 
 @media screen and (max-width: 575px) {
     .app-header {
+        position: initial;
 
         .nav-bar {
             display: none;

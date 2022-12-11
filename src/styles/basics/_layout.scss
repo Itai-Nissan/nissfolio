@@ -1,11 +1,14 @@
 .app {
-    display: flex;
-    justify-content: center;
-    
-    .main-app {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
+
+    .v-application__wrap {
+
+        align-items: center;
+
+        .main-app {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
     }
 }
 

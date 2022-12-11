@@ -4,8 +4,6 @@ import AppHeader from './components/app.header.cmp.vue'
 export default {
   components: {
     AppHeader,
-    // appFooter,
-    // userMsg,
   },
   created() {
   },
@@ -15,11 +13,12 @@ export default {
 </script>
 
 <template>
-  <div class="app">
-
+  <!-- <div > -->
+    <v-app class="app">
     <section class="main-app container">
-      <app-header />
-      <RouterView/>
-    </section>
-  </div>
+        <app-header />
+        <RouterView />
+      </section>
+    </v-app>
+  <!-- </div> -->
 </template>
