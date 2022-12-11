@@ -7,8 +7,8 @@
             <v-navigation-drawer v-model="drawer" class="drawer">
                 <v-list nav dense>
                     <v-list-item-group v-model="group">
-                        <nav>
-                            <ul v-for="page in pages" v-if="pages" :key="page">
+                        <nav v-if="pages">
+                            <ul v-for="page in pages" :key="page">
                                 <RouterLink :to="page.url">// {{ page.name }}</RouterLink>
                             </ul>
                         </nav>

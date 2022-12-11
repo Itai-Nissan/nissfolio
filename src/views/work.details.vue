@@ -30,9 +30,8 @@
         <div class="work-details-media">
             <section class="details-carousel">
                 <v-carousel show-arrowsshow-arrows-on-hover hide-delimiter-background height="auto">
-                    <v-carousel-item
-v-for="(img, i) in currentWork.images" :key="i" :src="img"
-                        reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
+                    <v-carousel-item v-for="(img, i) in currentWork.images" :key="i" :src="img"
+                    reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
                 </v-carousel>
                 <video v-if="currentWork.vidUrl" controls autoplay :src=currentWork.vidUrl></video>
             </section>

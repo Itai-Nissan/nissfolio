@@ -3,7 +3,7 @@
         <div class="card-header">
             <h5>{{ skill.title }}</h5>
             <section class="card-icons">
-                <ul v-for="icon in skill.icons">
+                <ul v-for="icon in skill.icons" :key="icon">
                     <mdicon :name="icon" />
                 </ul>
             </section>
