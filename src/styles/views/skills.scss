@@ -59,7 +59,7 @@
             border-style: solid;
             border-width: 2px;
             margin-block-end: 1em;
-            border-color: #a3a3a3;
+            // border-color: #a3a3a3;
             transition: .6s ease-in-out;
             padding: 40px 30px;
             overflow: hidden;
@@ -93,6 +93,7 @@
         }
 
         .skills-table {
+            margin-block-start: 1em;
             margin-inline-start: 0em;
 
 

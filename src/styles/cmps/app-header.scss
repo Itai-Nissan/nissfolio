@@ -146,6 +146,10 @@
     .app-header {
         position: initial;
 
+        .header-logo {
+            right: 10px;
+        }
+
         .nav-bar {
             display: none;
         }
