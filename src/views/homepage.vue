@@ -1,6 +1,6 @@
 <template>
     <div class="bg-image">
-        <img src="../assets/images/pexels-johannes-plenio-1114891.jpg" alt="">
+        <img src="../assets/images/pexels-johannes-plenio-1114891-min.jpg" alt="">
     </div>
     <section class="home-page container">
         <div class="text">

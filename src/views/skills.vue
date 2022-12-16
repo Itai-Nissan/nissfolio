@@ -1,6 +1,6 @@
 <template>
     <div class="bg-image">
-        <img src="../assets/images/pexels-pixabay-258109.jpg" alt="">
+        <img src="../assets/images/pexels-pixabay-258109-min.jpg" alt="">
     </div>
     <section class="skills container">
         <h1>My Skills</h1>

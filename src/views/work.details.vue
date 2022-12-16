@@ -1,6 +1,6 @@
 <template>
     <div class="bg-image">
-        <img src="../assets/images/pexels-johannes-plenio-1110663.jpg" alt="">
+        <img src="../assets/images/pexels-johannes-plenio-1110663-min.jpg" alt="">
     </div>
     <section v-if="currentWork" class="work-details container">
         <div class="work-details-header">

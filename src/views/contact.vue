@@ -1,6 +1,6 @@
 <template>
     <div class="bg-image">
-        <img src="../assets/images/pexels-kyle-roxas-2138922.jpg" alt="">
+        <img src="../assets/images/pexels-kyle-roxas-2138922-min.jpg" alt="">
     </div>
     <section class="contact container">
         <h1>contact</h1>
