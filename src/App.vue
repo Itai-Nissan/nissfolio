@@ -13,12 +13,10 @@ export default {
 </script>
 
 <template>
-  <!-- <div > -->
     <v-app class="app">
     <section class="main-app container">
         <app-header />
         <RouterView />
       </section>
     </v-app>
-  <!-- </div> -->
 </template>
