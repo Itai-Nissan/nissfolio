@@ -20,17 +20,17 @@
         font-size: 2em;
         font-family: Poppins-Medium, Helvetica, Arial, sans-serif;
     }
-    
+
     p {
-        display: flex;        
+        display: flex;
         font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
     }
-    
+
     a {
         font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
     }
-    
-    span{
+
+    span {
         font-family: Poppins-Medium, Helvetica, Arial, sans-serif;
     }
 
@@ -96,7 +96,7 @@
                 height: 500px;
                 margin-block-end: 2em;
 
-                .v-window__container{
+                .v-window__container {
                     height: 45rem;
                 }
 
@@ -107,7 +107,7 @@
             }
 
             .v-carousel__controls {
-    
+
                 .v-btn {
                     background-color: #fdf6ad46;
                     color: #ffffff;
@@ -183,23 +183,23 @@
         .work-details-media {
             display: block;
             flex-direction: column;
-            
+
             .details-carousel {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 width: 100%;
                 height: 100%;
-                
+
                 video {
                     width: 100%;
                 }
-                
+
                 .v-window {
                     width: 100%;
                     margin-block-end: 2em;
 
-                    .v-window__container{
+                    .v-window__container {
                         height: 13rem;
                     }
 
