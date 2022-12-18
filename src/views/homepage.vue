@@ -4,15 +4,24 @@
     </div>
     <section class="home-page container">
         <div class="text">
-            <h1>ITAI NISSAN</h1>
-            <h3>FRONTEND // FULL STACK DEVELEPOR </h3>
+            <transition name="fade">
+                <h1 v-if="visible">ITAI NISSAN</h1>
+            </transition>
+            <transition name="fade">
+                <h3 v-if="visible">FRONTEND // FULL STACK DEVELEPOR </h3>
+            </transition>
         </div>
     </section>
 </template>
 
 <script>
+import { ref } from 'vue'
 export default {
     name: 'HomePage',
+    setup() {
+        const visible = ref(false)
+        return { visible }
+    },
     data() {
         return {
             navClass: 'home-nav',
@@ -22,6 +31,7 @@ export default {
         this.onSetNavClass(this.navClass)
     },
     mounted() {
+        this.visible = true
         // document.body.style.backgroundImage = "url('../src/assets/images/pexels-johannes-plenio-1114891.jpg')"
     },
     methods: {
@@ -32,6 +42,14 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
 
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 3s ease;
+}
 </style>
