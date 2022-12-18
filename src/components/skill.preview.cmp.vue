@@ -1,5 +1,13 @@
 <template>
-    <section :class="{ 'open-modal': isOpen, 'close-modal': !isOpen }" class="skill-card" @click="openModal()">
+    <section :class="{ 'open-modal': isOpen, 'close-modal': !isOpen }" class="skill-card" @click="openModal()" v-wave="{
+        color: 'currentColor',
+        easing: 'ease-out',
+        duration: .6,
+        initialOpacity: 0.2,
+        finalOpacity: 0.01,
+        cancellationPeriod: 75,
+        trigger: 'auto',
+    }">
         <div class="card-header">
             <h5>{{ skill.title }}</h5>
             <section class="card-icons">

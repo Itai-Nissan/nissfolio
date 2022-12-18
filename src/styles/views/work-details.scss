@@ -13,19 +13,24 @@
 
     h3 {
         font-size: 1.2em;
-        font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
+        font-family: Poppins-Medium, Helvetica, Arial, sans-serif;
     }
 
     h4 {
         font-size: 2em;
-        font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
-    }
-
-    p {
         font-family: Poppins-Medium, Helvetica, Arial, sans-serif;
     }
-
+    
+    p {
+        display: flex;        
+        font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
+    }
+    
     a {
+        font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
+    }
+    
+    span{
         font-family: Poppins-Medium, Helvetica, Arial, sans-serif;
     }
 
@@ -44,7 +49,7 @@
             justify-content: space-evenly;
             border-width: 2px;
             border-color: #a3a3a3;
-            border-style: solid;
+            // border-style: solid;
             border-radius: 50px 7px 50px 7px;
             background-color: $details-nav-back;
             margin-block-end: 1em;
@@ -52,7 +57,7 @@
 
         .specs {
             display: flex;
-            padding: 20px 30px;
+            padding: 10px 1px;
 
             .tech-specs {
                 margin-inline-start: 1em;
@@ -61,7 +66,6 @@
 
         .specs-url {
             display: flex;
-            padding: 20px 30px;
 
             .url {
                 margin-inline-start: 1em;
@@ -90,8 +94,11 @@
 
             .v-window {
                 height: 500px;
-                width: 1000px;
                 margin-block-end: 2em;
+
+                .v-window__container{
+                    height: 45rem;
+                }
 
                 .v-btn {
                     height: calc(var(--v-btn-height) + 12px);
@@ -100,6 +107,7 @@
             }
 
             .v-carousel__controls {
+    
                 .v-btn {
                     background-color: #fdf6ad46;
                     color: #ffffff;
@@ -190,6 +198,10 @@
                 .v-window {
                     width: 100%;
                     margin-block-end: 2em;
+
+                    .v-window__container{
+                        height: 13rem;
+                    }
 
                     .v-btn {
                         height: calc(var(--v-btn-height) - 15px);

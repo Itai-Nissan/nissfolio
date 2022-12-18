@@ -1,4 +1,6 @@
 import { createApp } from 'vue'
+import VWave from 'v-wave'
+
 import App from './App.vue'
 import router from './router'
 import store from './store'
@@ -21,6 +23,14 @@ const vuetify = createVuetify({
   directives,
 })
 app.use(vuetify)
+app.use(VWave)
+// app.use(VWave, {
+//   color: 'red',
+//   initialOpacity: 0.5,
+//   easing: 'ease-in',
+// })
+
+
 
 app.use(mdiVue, {
   icons: mdijs

@@ -13,9 +13,10 @@
                     <h4>Tech specs</h4>
                 </div>
                 <div class="tech-specs">
-                    <p>Frontend: {{ firstToCap(currentWork.tech.frontend) }}</p>
-                    <p v-if="currentWork.tech.backend">Backend: {{ firstToCap(currentWork.tech.backend) }}</p>
-                    <p v-if="currentWork.tech.data">Data: {{ firstToCap(currentWork.tech.data) }}</p>
+                    <p>Frontend: <span>{{ firstToCap(currentWork.tech.frontend) }}</span></p>
+                    <p v-if="currentWork.tech.backend">Backend:<span>{{ firstToCap(currentWork.tech.backend) }}</span>
+                    </p>
+                    <p v-if="currentWork.tech.data">Data:<span>{{ firstToCap(currentWork.tech.data) }}</span></p>
                 </div>
             </div>
             <div class="specs-url card">
@@ -29,11 +30,13 @@
         </div>
         <div class="work-details-media">
             <section class="details-carousel">
-                <v-carousel show-arrowsshow-arrows-on-hover hide-delimiter-background height="auto">
-                    <v-carousel-item v-for="(img, i) in currentWork.images" :key="i" :src="img"
-                    reverse-transition="fade-transition" transition="fade-transition"></v-carousel-item>
-                </v-carousel>
                 <video v-if="currentWork.vidUrl" controls autoplay :src=currentWork.vidUrl></video>
+                <v-carousel show-arrowsshow-arrows-on-hover hide-delimiter-background height="auto">
+                    <v-carousel-item v-for="(img, i) in currentWork.images" :key="i"
+                        reverse-transition="fade-transition" transition="fade-transition">
+                        <a :href=img target="_blank"><v-img :src="img" alt=""></v-img></a>
+                    </v-carousel-item>
+                </v-carousel>
             </section>
         </div>
     </section>
