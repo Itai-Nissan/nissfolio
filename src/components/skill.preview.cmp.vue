@@ -1,5 +1,6 @@
 <template>
-    <section :class="{ 'open-modal': isOpen, 'close-modal': !isOpen }" class="skill-card" @click="openModal()" v-wave="{
+    <section :class="{ 'open-modal': isOpen, 'close-modal': !isOpen }" class="skill-card" @click="openModal()"
+        v-wave="{
         color: 'currentColor',
         easing: 'ease-out',
         duration: .6,

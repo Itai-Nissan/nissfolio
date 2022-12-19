@@ -3,7 +3,7 @@
         <img src="../assets/images/pexels-kyle-roxas-2138922-min.jpg" alt="">
     </div>
     <section class="contact container">
-        <h1>contact</h1>
+        <h1>Contact</h1>
         <section class="contact-info">
             <div class="contact-card">
                 <mdicon name="email" />

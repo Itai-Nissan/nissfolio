@@ -49,9 +49,34 @@ h6 {
     padding: 0;
 }
 
+h1{
+    font-family: Julee;
+    letter-spacing: 2.2px;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: Poppins-Medium, Helvetica, Arial, sans-serif;
+}
+
+h4 {
+    font-size: 2em;
+    font-family: Poppins-Medium, Helvetica, Arial, sans-serif;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+    font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
+}
+
+p {
+    display: flex;
+    font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
+}
+
+span {
+    font-family: Poppins-Medium, Helvetica, Arial, sans-serif;
 }
 
 button {

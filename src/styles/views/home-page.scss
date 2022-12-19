@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: $home-nav-hover;
 
     .home-page-bg {
         position: absolute;
@@ -23,39 +22,47 @@
         text-align: center;
 
         h1 {
-            font-family: Poppins-Medium;
-            font-size: 10vw;
-            text-transform: uppercase;
-            letter-spacing: 2.2px;
-            text-shadow: 1px 3px 1px rgb(0 0 0 / 30%);
+            font-size: 12em;
+            text-shadow: 1px 2px 1px rgb(0 0 0 / 30%);
+            background: linear-gradient(to top, $home-nav 0%, $home-nav-hover 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        
+
         h3 {
-            text-shadow: 1px 3px 1px rgb(0 0 0 / 30%);
-            font-family: Poppins-Medium;
+            font-family: Julee;
             font-weight: 600;
             font-size: 22px;
             text-transform: uppercase;
             letter-spacing: 1.2px;
+            background: linear-gradient(to bottom, $home-nav 0%, $home-nav-hover 50%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
 }
 
-@media screen and (max-width: 1140px) {
-}
+@media screen and (max-width: 1140px) {}
 
-@media screen and (max-width: 990px) {
-}
+@media screen and (max-width: 990px) {}
 
-@media screen and (max-width: 767px) {
-}
+@media screen and (max-width: 767px) {}
 
 @media screen and (max-width: 575px) {
     .home-page {
         margin-block-start: 7vh;
 
-        h1{
-            margin-block-end: 0.5em;
+        .text {
+            h1 {
+                font-size: 4em;
+            }
+
+            h3 {
+                background: linear-gradient(to bottom, $home-nav 0%, $home-nav-hover 20%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+    
+            }
         }
-    }    
+    }
 }

@@ -1,6 +1,8 @@
 <template>
     <div class="bg-image">
-        <img src="../assets/images/pexels-johannes-plenio-1114891-min.jpg" alt="">
+        <transition name="fade">
+            <img v-if="visible" src="../assets/images/pexels-johannes-plenio-1114891-min.jpg" alt="">
+        </transition>
     </div>
     <section class="home-page container">
         <div class="text">

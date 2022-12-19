@@ -1,7 +1,15 @@
 <template>
     <section class="preview-container">
         <div class="work-title">
-            <v-btn width="150px" class="ma-2" @click="expand = !expand">
+            <v-btn width="150px" class="ma-2" @click="expand = !expand" v-wave="{
+                color: 'currentColor',
+                easing: 'ease-out',
+                duration: .6,
+                initialOpacity: 0.2,
+                finalOpacity: 0.02,
+                cancellationPeriod: 75,
+                trigger: 'auto',
+            }">
                 <div class="title-he">
                     <h3>{{ workTitle }}</h3>
                 </div>
