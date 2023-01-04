@@ -21,10 +21,11 @@
             </div>
             <div class="specs-url card">
                 <div class="header">
-                    <h4>Visit site</h4>
+                    <h4>Go to</h4>
                 </div>
                 <div class="url">
-                    <a :href="currentWork.url" target="_blank">{{ firstToCap(currentWork.title) }}</a>
+                    <a :href="currentWork.url" target="_blank">Site</a>
+                    <a :href="currentWork.git" target="_blank">Git</a>
                 </div>
             </div>
         </div>

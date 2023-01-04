@@ -24,14 +24,6 @@ const vuetify = createVuetify({
 })
 app.use(vuetify)
 app.use(VWave)
-// app.use(VWave, {
-//   color: 'red',
-//   initialOpacity: 0.5,
-//   easing: 'ease-in',
-// })
-
-
-
 app.use(mdiVue, {
   icons: mdijs
 })

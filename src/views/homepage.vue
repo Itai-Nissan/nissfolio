@@ -20,6 +20,8 @@
 import { ref } from 'vue'
 export default {
     name: 'HomePage',
+    components: {
+    },
     setup() {
         const visible = ref(false)
         return { visible }
@@ -34,7 +36,6 @@ export default {
     },
     mounted() {
         this.visible = true
-        // document.body.style.backgroundImage = "url('../src/assets/images/pexels-johannes-plenio-1114891.jpg')"
     },
     methods: {
         onSetNavClass(navClass) {
@@ -53,5 +54,9 @@ export default {
 .fade-enter-active,
 .fade-leave-active {
     transition: opacity 3s ease;
+}
+.fade-leaves-enter-from,
+.fade-leaves-leave-to {
+    opacity: 0;
 }
 </style>

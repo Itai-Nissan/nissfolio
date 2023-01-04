@@ -13,9 +13,13 @@
         -webkit-text-fill-color: transparent;
     }
 
+    h4{
+        font-family: Julee;
+        font-weight: 800;
+    }
+
     p {
         display: flex;
-        // font-family: RobotoMono-Bold, Helvetica, Arial, sans-serif;
     }
 
     .work-details-header {
@@ -30,10 +34,8 @@
             align-items: center;
             flex-direction: column;
             width: 40%;
-            justify-content: space-evenly;
             border-width: 2px;
             border-color: #a3a3a3;
-            // border-style: solid;
             border-radius: 50px 7px 50px 7px;
             background-color: $details-nav-back;
             margin-block-end: 1em;
@@ -45,20 +47,46 @@
 
             .tech-specs {
                 margin-inline-start: 1em;
+
+                p {
+                    margin-block-end: .2em;
+                }
             }
         }
 
         .specs-url {
             display: flex;
+            padding: 10px 1px;
 
             .url {
-                margin-inline-start: 1em;
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+
+                a:not(:first-child) {
+                    margin-block-start: 1em;
+                }
+
+                a {
+                    font-family: RobotoMono-Medium;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 30px;
+                    padding-inline-start: 1em;
+                    padding-inline-end: 1em;
+                    border-radius: 50px 0px 50px 0px;
+                    color: $details-nav-hover;
+                    background-color: $details-nav;
+                }
+
+                a:hover {
+                    text-shadow: 1px 3px 11px rgb(0 0 0 / 30%);
+                    background-color: $details-nav-hover;
+                    color: $details-nav;
+                }
             }
 
-            .url:hover {
-                text-shadow: 1px 3px 11px rgb(0 0 0 / 30%);
-                color: $details-nav-hover;
-            }
         }
     }
 
@@ -125,7 +153,7 @@
     .work-details {
 
         h1 {
-            font-size: 4em;
+            font-size: 3em;
             margin-block-end: .5em;
         }
 
@@ -180,8 +208,8 @@
                 }
 
                 .v-window {
-                    width: 100%;
                     margin-block-end: 2em;
+                    width: 100%;
 
                     .v-window__container {
                         height: 13rem;

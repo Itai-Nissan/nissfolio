@@ -9,6 +9,7 @@
             "data": "mongodb"
         },
         "url": "https://quiderr.onrender.com/#/",
+        "git": "https://github.com/Itai-Nissan/quiderr",
         "vidUrl": "assets/vids/work/quiderr_present.mp4",
         "mainImg": "assets/images/work/quiderr/quiderr-homepage.jpg",
         "images": [
@@ -28,6 +29,7 @@
             "data": "API, Json"
         },
         "url": "https://itai-nissan.github.io/free-to-game/",
+        "git": "https://github.com/Itai-Nissan/free-to-game",
         "mainImg": "assets/images/work/free-to-game/free-to-game-homepage.jpg",
         "images": [
             "assets/images/work/free-to-game/freeToGame_user_home.jpg",
@@ -47,6 +49,7 @@
             "data": "API, Json"
         },
         "url": "https://itai-nissan.github.io/Mister-Bit-Ang/signup",
+        "git": "https://github.com/Itai-Nissan/Mister-Bit-Ang",
         "mainImg": "assets/images/work/mister-bit/mister-bit-homepage.jpg",
         "images": [
             "assets/images/work/mister-bit/misterBit_user_home.jpg",
