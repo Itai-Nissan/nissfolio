@@ -29,6 +29,18 @@
     .contact-info {
         z-index: 180;
 
+        .v-alert {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: center;
+            width: 300px;
+            color: $contact-nav-hover;
+            background-color: $contact-nav;
+        }
+
         p {
             font-weight: 400;
             line-height: 1.4em;
@@ -112,6 +124,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+            .v-alert {
+                top: 50%;
+            }
+    
 
             svg {
                 margin-inline-end: .5em

@@ -37,7 +37,6 @@ export default {
     },
     mounted() {
         this.visible = true
-        // document.body.style.backgroundImage = "url('../src/assets/images/pexels-johannes-plenio-1114891.jpg')"
     },
     methods: {
         onSetNavClass(navClass) {

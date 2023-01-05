@@ -25,14 +25,25 @@
                     <v-btn type="sumbit">Send</v-btn>
                 </form>
             </div>
+            <transition name="fade">
+                <div v-if="visible">
+                    <v-alert>Mail sent, thank you for connecting</v-alert>
+                </div>
+            </transition>
         </section>
     </section>
 </template>
 
 
 <script>
+import { ref } from 'vue'
+
 export default {
     name: 'NissfolioContact',
+    setup() {
+        const visible = ref(false)
+        return { visible }
+    },
     data() {
         return {
             navClass: 'contact-nav',
@@ -40,7 +51,6 @@ export default {
             name: '',
             email: '',
             msg: '',
-
         }
     },
     created() {
@@ -52,7 +62,6 @@ export default {
         onSendMail(e) {
             if (!this.email || !this.msg) return
             else {
-                console.log('else');
                 Email.send({
                     SecureToken: '8319be1d-fddd-42e3-be38-8d65fc176259',
                     To: 'itainissan@gmail.com',
@@ -60,7 +69,12 @@ export default {
                     Subject: "Portfolio contact - " + this.name,
                     Body: "Sent from:<br>" + this.email + "<br>Massage:<br>" + this.msg
                 }).then(
-                    message => alert(message),
+                    this.visible = !this.visible,
+                    setTimeout(() => {
+                        this.visible = !this.visible
+                    },
+                        3000
+                    ),
                     this.name = '',
                     this.email = '',
                     this.msg = '',
@@ -73,3 +87,15 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 1s ease;
+}
+</style>
