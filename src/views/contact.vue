@@ -18,7 +18,7 @@
                     <mdicon name="email" />
                     <span>itainissan@gmail.com</span>
                 </div>
-                <form class="contact_form" action="#" @submit.prevent="onSendMail">
+                <form class="contact-form" action="#" @submit.prevent="onSendMail">
                     <v-text-field class="name" type="text" v-model="name" placeholder="Your name.."></v-text-field>
                     <v-text-field class="email" type="email" v-model="email" placeholder="Your email.."></v-text-field>
                     <v-textarea cols="5" rows="5" v-model="msg" placeholder="Your massege.."></v-textarea>
@@ -47,7 +47,6 @@ export default {
     data() {
         return {
             navClass: 'contact-nav',
-            form: document.querySelector('contact_form'),
             name: '',
             email: '',
             msg: '',

@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     color: $contact-nav;
+    margin-inline-start: 7em;
 
     h1 {
         font-size: 5vw;
@@ -80,7 +81,7 @@
         .email-card {
             flex-direction: column;
 
-            .contact_form {
+            .contact-form {
                 width: 80%;
                 padding-block-end: 1em;
 
@@ -105,14 +106,34 @@
     }
 }
 
-@media screen and (max-width: 1140px) {}
+@media screen and (max-width: 1140px) {
+    .contact {
+        .contact-info {
 
-@media screen and (max-width: 990px) {}
+            .contact-card {
+                max-width: 33%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .contact {
+        .contact-info {
+
+            .contact-card {
+                max-width: 43%;
+            }
+        }
+    }
+
+}
 
 @media screen and (max-width: 767px) {}
 
 @media screen and (max-width: 575px) {
     .contact {
+        margin-inline-start: 0em;
 
         h1 {
             font-size: 4em;
@@ -123,19 +144,18 @@
         .contact-info {
             display: flex;
             flex-direction: column;
-            align-items: center;
 
             .v-alert {
                 top: 50%;
             }
-    
+
 
             svg {
                 margin-inline-end: .5em
             }
 
             .contact-card {
-                min-width: 100%;
+                max-width: 100%;
                 padding-inline-start: 1em;
             }
         }
