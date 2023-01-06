@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 575px) {
     .home-page {
-        margin-block-start: 7vh;
+        margin-block-start: 5vh;
 
         .text {
             h1 {
@@ -48,7 +48,6 @@
                 background: linear-gradient(to bottom, $home-nav 0%, $home-nav-hover 20%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
-
             }
         }
     }

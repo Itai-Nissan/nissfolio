@@ -91,9 +91,40 @@
 
 @media screen and (max-width: 1140px) {}
 
-@media screen and (max-width: 990px) {}
+@media screen and (max-width: 990px) {
+    .skills {
 
-@media screen and (max-width: 767px) {}
+        .skills-table {
+            margin-inline-start: 0em;
+
+            .open-modal {
+                height: 220px;
+            }
+
+            .close-modal {
+                width: 37%;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .skills {
+
+        .skills-table {
+
+            .open-modal {
+                height: 260px;
+            }
+
+            .close-modal {
+                width: 47%;
+            }
+
+        }
+    }
+}
 
 @media screen and (max-width: 575px) {
     .skills {
@@ -124,7 +155,7 @@
                 }
 
                 .close-modal {
-                    height: 3.7em;
+                    height: 4.7em;
                     width: 100%;
                 }
             }

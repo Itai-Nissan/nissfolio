@@ -13,7 +13,7 @@
         -webkit-text-fill-color: transparent;
     }
 
-    h4{
+    h4 {
         font-family: Julee;
         font-weight: 800;
     }
@@ -143,11 +143,87 @@
 
 }
 
-@media screen and (max-width: 1140px) {}
+@media screen and (max-width: 1140px) {
+    .work-details {
+        .work-details-media {
 
-@media screen and (max-width: 990px) {}
+            .details-carousel {
 
-@media screen and (max-width: 767px) {}
+                .v-window {
+
+                    .v-window__container {
+                        height: 32rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .work-details {
+        .work-details-media {
+
+            video {
+                width: 70%;
+                margin-block-end: 1em;
+            }
+
+            .details-carousel {
+
+                .v-window {
+
+                    .v-window__container {
+                        height: 26rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .work-details {
+
+        .work-details-tech {
+            .card {
+                width: 48%;
+            }
+
+            .specs-url {
+                display: flex;
+                padding: 10px 1px;
+
+                .url {
+
+                    a {
+                        margin-block-end: 1em;
+                    }
+                }
+            }
+        }
+
+        .work-details-media {
+
+            video {
+                width: 100%;
+                margin-block-end: 1em;
+            }
+
+            .details-carousel {
+
+                .v-window {
+
+                    .v-window__container {
+                        height: 19rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
 
 @media screen and (max-width: 575px) {
     .work-details {
