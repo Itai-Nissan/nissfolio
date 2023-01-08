@@ -19,9 +19,9 @@
                     <span>itainissan@gmail.com</span>
                 </div>
                 <form class="contact-form" action="#" @submit.prevent="onSendMail">
-                    <v-text-field class="name" type="text" v-model="name" placeholder="Your name.."></v-text-field>
-                    <v-text-field class="email" type="email" v-model="email" placeholder="Your email.."></v-text-field>
-                    <v-textarea cols="5" rows="5" v-model="msg" placeholder="Your massege.."></v-textarea>
+                    <v-text-field v-model="name" class="name" type="text" placeholder="Your name.."></v-text-field>
+                    <v-text-field v-model="mail" class="email" type="email" placeholder="Your email.."></v-text-field>
+                    <v-textarea v-model="msg" cols="5" rows="5" placeholder="Your massege.."></v-textarea>
                     <v-btn type="sumbit">Send</v-btn>
                 </form>
             </div>
@@ -48,7 +48,7 @@ export default {
         return {
             navClass: 'contact-nav',
             name: '',
-            email: '',
+            mail: '',
             msg: '',
         }
     },
@@ -58,15 +58,15 @@ export default {
     mounted() {
     },
     methods: {
-        onSendMail(e) {
-            if (!this.email || !this.msg) return
+        onSendMail() {
+            if (!this.mail || !this.msg) return
             else {
                 Email.send({
                     SecureToken: '8319be1d-fddd-42e3-be38-8d65fc176259',
                     To: 'itainissan@gmail.com',
                     From: 'itainissan@gmail.com',
                     Subject: "Portfolio contact - " + this.name,
-                    Body: "Sent from:<br>" + this.email + "<br>Massage:<br>" + this.msg
+                    Body: "Sent from:<br>" + this.mail + "<br>Massage:<br>" + this.msg
                 }).then(
                     this.visible = !this.visible,
                     setTimeout(() => {

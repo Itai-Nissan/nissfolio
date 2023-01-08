@@ -33,7 +33,8 @@
             <section class="details-carousel">
                 <video v-if="currentWork.vidUrl" controls autoplay :src=currentWork.vidUrl></video>
                 <v-carousel show-arrowsshow-arrows-on-hover hide-delimiter-background height="auto">
-                    <v-carousel-item v-for="(img, i) in currentWork.images" :key="i"
+                    <v-carousel-item
+v-for="(img, i) in currentWork.images" :key="i"
                         reverse-transition="fade-transition" transition="fade-transition">
                         <a :href=img target="_blank"><v-img :src="img" alt=""></v-img></a>
                     </v-carousel-item>
