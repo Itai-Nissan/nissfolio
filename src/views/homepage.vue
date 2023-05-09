@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <section class="home-page container">
+    <div class="">
+        <section class="home-page">
             <!-- <template> -->
             <!-- </template> -->
 
@@ -41,7 +41,9 @@
                 </div>
             </div>
         </section>
-        <work :works="works"></work>
+        <section class="work-bg">
+            <work :works="works"></work>
+        </section>
         <section class="skills container">
             <section class="skills-table">
                 <div v-for="skill in skills" :key="skill._id" class="skill-preview-container">

@@ -1,14 +1,14 @@
 <template>
-    <!-- <div class="bg-image">
-        <img src="../assets/images/pexels-pixabay-35796.jpg" alt="">
-    </div> -->
-    <section class="work container">
-        <h1>MY WORKS</h1>
-        <section class="summary">
-            <div v-if=works class="">
-                <work-list :works="works"></work-list>
-            </div>
-        </section>
+        <section class="work container">
+            <h1>MY WORKS</h1>
+            <section class="works-wrapper">
+                <div v-if=works class="works">
+                    <work-list :works="works"></work-list>
+                </div>
+                <div class="works-img">
+                    <v-parallax src="../assets/images/pexels-johannes-plenio-1110663-min.jpg"></v-parallax>
+                </div>
+            </section>
     </section>
 </template>
 

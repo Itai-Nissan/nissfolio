@@ -17,8 +17,8 @@ export default {
 
 <template>
   <v-app class="app">
-    <section class="main-app container">
-      <app-header />
+    <section class="main-app">
+      <!-- <app-header /> -->
       <RouterView />
     </section>
   </v-app>
