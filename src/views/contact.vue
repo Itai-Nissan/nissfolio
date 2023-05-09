@@ -1,6 +1,6 @@
 <template>
     <div class="bg-image">
-        <img src="../assets/images/pexels-kyle-roxas-2138922-min.jpg" alt="">
+        <!-- <img src="../assets/images/pexels-kyle-roxas-2138922-min.jpg" alt=""> -->
     </div>
     <section class="contact container">
         <h1>Contact</h1>
@@ -86,15 +86,3 @@ export default {
     }
 }
 </script>
-
-<style scoped>
-.fade-enter-from,
-.fade-leave-to {
-    opacity: 0;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 1s ease;
-}
-</style>

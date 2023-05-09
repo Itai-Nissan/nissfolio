@@ -1,7 +1,7 @@
 .app-header {
     height: 10vh;
     padding-block-start: 4vh;
-    position: relative;
+    position: absolute;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
@@ -33,7 +33,7 @@
         position: absolute;
         right: 0;
         top: 1.2em;
-        color: $home-nav;
+        // color: $home-nav;
     }
 
     .drop-down {

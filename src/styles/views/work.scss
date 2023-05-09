@@ -1,9 +1,12 @@
 .work {
+    padding-block-start: 10vh;
     margin-block-start: 1vh;
     display: flex;
     flex-direction: column;
     text-align: center;
     z-index: 180;
+    height: 100vh;
+
 
     h1 {
         font-size: 5vw;

@@ -6,17 +6,20 @@ export default {
     AppHeader,
   },
   created() {
+    this.$store.dispatch('getWorks')
+    this.$store.dispatch('getSkills')
   },
   methods: {
+
   },
 }
 </script>
 
 <template>
-    <v-app class="app">
+  <v-app class="app">
     <section class="main-app container">
-        <app-header />
-        <RouterView />
-      </section>
-    </v-app>
+      <app-header />
+      <RouterView />
+    </section>
+  </v-app>
 </template>

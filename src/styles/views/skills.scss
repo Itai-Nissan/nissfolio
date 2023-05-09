@@ -1,7 +1,9 @@
 .skills {
+    padding-block-start: 10vh;
     display: flex;
     flex-direction: column;
     z-index: 180;
+    height: 100vh;
 
     h1 {
         font-size: 5vw;

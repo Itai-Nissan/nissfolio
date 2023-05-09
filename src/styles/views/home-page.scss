@@ -1,17 +1,21 @@
 .home-page {
+    padding-block-start: 10vh;
     margin-block-start: 0vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 100vh;
 
     .text {
         z-index: 200;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         h1 {
-            font-size: 12em;
+            font-size: 8em;
             text-shadow: 1px 2px 1px rgb(0 0 0 / 30%);
-            background: linear-gradient(to top, $home-nav 0%, $home-nav-hover 50%);
+            background: linear-gradient(to top, $home-back 0%, $home-text 50%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -22,12 +26,51 @@
             font-size: 22px;
             text-transform: uppercase;
             letter-spacing: 1.2px;
-            background: linear-gradient(to bottom, $home-nav 0%, $home-nav-hover 50%);
+            background: linear-gradient(to bottom, $home-back 0%, $home-text 50%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-block-end: 2em;
+        }
+
+        .summary {
+            padding: 0;
+            border-radius: 50px;
+            width: 1000px;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .summary-info {
+                position: absolute;
+                background-color: $home-back;
+                z-index: 3;
+                width: 1000px;
+                padding: 1em;
+            }
+            
+            .summary-img {
+                z-index: 2;
+                width: 100%;
+                
+                .v-img {
+                    border-radius: 50px;
+                    height: 100%;
+                }
+                
+                img {
+                    position: absolute;
+                    // height: 100%;
+
+
+
+                }
+            }
         }
     }
 }
+
 
 @media screen and (max-width: 1140px) {}
 

@@ -1,12 +1,14 @@
 <template>
-    <div class="bg-image">
+    <!-- <div class="bg-image">
         <img src="../assets/images/pexels-pixabay-35796.jpg" alt="">
-    </div>
+    </div> -->
     <section class="work container">
         <h1>MY WORKS</h1>
-        <div v-if=works class="">
-            <work-list :works="works"></work-list>
-        </div>
+        <section class="summary">
+            <div v-if=works class="">
+                <work-list :works="works"></work-list>
+            </div>
+        </section>
     </section>
 </template>
 
@@ -24,16 +26,12 @@ export default {
         }
     },
     created() {
-        this.onGetWorks()
+        this.works = this.$store.getters.works
         this.onSetNavClass(this.navClass)
     },
     mounted() {
     },
     methods: {
-        onGetWorks() {
-            this.$store.dispatch('getWorks')
-            this.works = this.$store.getters.works
-        },
         onSetNavClass(navClass) {
             this.$store.dispatch({ type: 'setNavClass', navClass })
         }

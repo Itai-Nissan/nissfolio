@@ -26,17 +26,12 @@ export default {
         }
     },
     created() {
-        this.onGetSkills()
+        this.skills = this.$store.getters.skills
         this.onSetNavClass(this.navClass)
     },
     mounted() {
-        // document.body.style.backgroundImage = "url('../src/assets/images/pexels-pixabay-258109.jpg')"
     },
     methods: {
-        onGetSkills() {
-            this.$store.dispatch('getSkills')
-            this.skills = this.$store.getters.skills
-        },
         onSetNavClass(navClass) {
             this.$store.dispatch({ type: 'setNavClass', navClass })
         }

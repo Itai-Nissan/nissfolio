@@ -1,8 +1,10 @@
 .contact {
+    padding-block-start: 10vh;
     display: flex;
     flex-direction: column;
     color: $contact-nav;
     margin-inline-start: 7em;
+    height: 100vh;
 
     h1 {
         font-size: 5vw;

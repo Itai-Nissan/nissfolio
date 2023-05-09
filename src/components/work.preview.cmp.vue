@@ -48,7 +48,7 @@ export default {
         }
     },
     data: () => ({
-        expand: false,
+        expand: true,
     }),
     computed: {
         workTitle() {
