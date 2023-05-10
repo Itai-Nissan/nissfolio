@@ -6,7 +6,7 @@
                     <work-list :works="works"></work-list>
                 </div>
                 <div class="works-img">
-                    <v-parallax src="../assets/images/pexels-johannes-plenio-1110663-min.jpg"></v-parallax>
+                    <v-parallax src="https://res.cloudinary.com/counditai/image/upload/v1683703290/nissfolio/pexels-pixabay-268533_fsmoan.jpg"></v-parallax>
                 </div>
             </section>
     </section>

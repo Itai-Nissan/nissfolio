@@ -1,7 +1,4 @@
 <template>
-    <div class="bg-image">
-        <!-- <img src="../assets/images/pexels-kyle-roxas-2138922-min.jpg" alt=""> -->
-    </div>
     <section class="contact container">
         <h1>Contact</h1>
         <section class="contact-info">
@@ -31,6 +28,9 @@
                 </div>
             </transition>
         </section>
+        <v-parallax
+            src="https://res.cloudinary.com/counditai/image/upload/v1683703502/nissfolio/pexels-kyle-roxas-2138922_byomsw.jpg"></v-parallax>
+
     </section>
 </template>
 

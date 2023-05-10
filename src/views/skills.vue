@@ -1,12 +1,14 @@
 <template>
-    <div class="bg-image">
-        <img src="../assets/images/pexels-pixabay-258109-min.jpg" alt="">
-    </div>
     <section class="skills container">
         <h1>My Skills</h1>
-        <section class="skills-table">
-            <div v-for="skill in skills" :key="skill._id" class="skill-preview-container">
-                <skill-preview :skill="skill"></skill-preview>
+        <section class="skills-wrapper">
+            <div class="skills-table">
+                <div v-for="skill in skills" :key="skill._id" class="skill-preview-container">
+                    <skill-preview :skill="skill"></skill-preview>
+                </div>
+            </div>
+            <div class="skills-img">
+                <v-parallax src="https://res.cloudinary.com/counditai/image/upload/v1683703284/nissfolio/pexels-pixabay-258109_m9w4jm.jpg"></v-parallax>
             </div>
         </section>
     </section>

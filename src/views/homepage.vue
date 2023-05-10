@@ -1,15 +1,6 @@
 <template>
     <div class="">
         <section class="home-page">
-            <!-- <template> -->
-            <!-- </template> -->
-
-            <div class="bg-image">
-                <!-- <v-parallax src="../assets/images/pexels-johannes-plenio-1114891-min.jpg"></v-parallax> -->
-                <!-- <transition name="fade">
-                    <img v-if="visible" src="../assets/images/pexels-johannes-plenio-1114891-min.jpg" alt="">
-                </transition> -->
-            </div>
             <div class="text">
                 <transition name="fade">
                     <h1 v-if="visible">ITAI NISSAN</h1>
@@ -19,7 +10,8 @@
                 </transition>
                 <div class="summary">
                     <div class="summary-img">
-                        <v-parallax src="../assets/images/pexels-johannes-plenio-1114891-min.jpg"></v-parallax>
+                        <v-parallax
+                            src="https://res.cloudinary.com/counditai/image/upload/v1683703272/nissfolio/pexels-johannes-plenio-1114891-min_we8ogo.jpg"></v-parallax>
                     </div>
                     <div class="summary-info">
                         <p>
@@ -35,23 +27,18 @@
                             laudantium expedita! Inventore dolorum ratione eum nostrum tempora ex.
                         </p>
                     </div>
-                    <!-- <div class="summary-img"> -->
-                    <!-- <v-parallax src="../assets/images/pexels-johannes-plenio-1114891-min.jpg"></v-parallax> -->
-                    <!-- </div> -->
                 </div>
             </div>
         </section>
         <section class="work-bg">
             <work :works="works"></work>
         </section>
-        <section class="skills container">
-            <section class="skills-table">
-                <div v-for="skill in skills" :key="skill._id" class="skill-preview-container">
-                    <skill-preview :skill="skill"></skill-preview>
-                </div>
-            </section>
+        <section class="skills-bg">
+            <skills :skills="skills"></skills>
         </section>
-        <contact></contact>
+        <section class="contact-bg">
+            <contact></contact>
+        </section>
     </div>
 </template>
 
