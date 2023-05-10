@@ -1,7 +1,7 @@
 <template>
-    <section class="skills container">
+    <section class="skills">
         <h1>My Skills</h1>
-        <section class="skills-wrapper">
+        <section class="skills-wrapper container">
             <div class="skills-table">
                 <div v-for="skill in skills" :key="skill._id" class="skill-preview-container">
                     <skill-preview :skill="skill"></skill-preview>

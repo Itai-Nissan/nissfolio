@@ -1,7 +1,7 @@
 <template>
-        <section class="work container">
+        <section class="work">
             <h1>MY WORKS</h1>
-            <section class="works-wrapper">
+            <section class="works-wrapper container">
                 <div v-if=works class="works">
                     <work-list :works="works"></work-list>
                 </div>

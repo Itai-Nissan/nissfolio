@@ -24,7 +24,6 @@
 
         .works-wrapper {
             border-radius: 50px;
-            width: 1200px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -40,7 +39,7 @@
 
             .works-img {
                 z-index: 2;
-                width: 100%;
+                width: 90%;
 
                 .v-img {
                     border-radius: 50px;
