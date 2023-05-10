@@ -6,7 +6,7 @@
                     <h1 v-if="visible">ITAI NISSAN</h1>
                 </transition>
                 <transition name="fade">
-                    <h3 v-if="visible">A full stack developer </h3>
+                    <h3 v-if="visible">Full stack developer </h3>
                 </transition>
                 <div class="summary">
                     <div class="summary-img">
