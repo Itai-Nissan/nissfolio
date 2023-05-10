@@ -11,13 +11,13 @@
         "url": "https://quiderr.onrender.com/#/",
         "git": "https://github.com/Itai-Nissan/quiderr",
         "vidUrl": "assets/vids/work/quiderr_present.mp4",
-        "mainImg": "assets/images/work/quiderr/quiderr-homepage.jpg",
+        "mainImg": "https://res.cloudinary.com/counditai/image/upload/v1683703514/nissfolio/quiderr-homepage_ere9rc.jpg",
         "images": [
-            "assets/images/work/quiderr/quiderr_home.jpg",
-            "assets/images/work/quiderr/quiderr_explore.jpg",
-            "assets/images/work/quiderr/quiderr_gig_details.jpg",
-            "assets/images/work/quiderr/quiderr_gig_purchase.jpg",
-            "assets/images/work/quiderr/quiderr_user_page2.jpg"
+            "https://res.cloudinary.com/counditai/image/upload/v1683705065/nissfolio/works/quiderr/quiderr_home_zwbmmx.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705063/nissfolio/works/quiderr/quiderr_explore_lvan1y.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705064/nissfolio/works/quiderr/quiderr_gig_details_awnfbz.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705064/nissfolio/works/quiderr/quiderr_gig_purchase_gfkbbp.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705065/nissfolio/works/quiderr/quiderr_user_page2_edldtp.jpg"
         ]
     },
     {
@@ -30,14 +30,14 @@
         },
         "url": "https://itai-nissan.github.io/free-to-game/",
         "git": "https://github.com/Itai-Nissan/free-to-game",
-        "mainImg": "assets/images/work/free-to-game/free-to-game-homepage.jpg",
+        "mainImg": "https://res.cloudinary.com/counditai/image/upload/v1683703514/nissfolio/free-to-game-homepage_jq6a66.jpg",
         "images": [
-            "assets/images/work/free-to-game/freeToGame_user_home.jpg",
-            "assets/images/work/free-to-game/freeToGame_user.jpg",
-            "assets/images/work/free-to-game/freeToGame_login.jpg",
-            "assets/images/work/free-to-game/freeToGame_list.jpg",
-            "assets/images/work/free-to-game/freeToGame_home.jpg",
-            "assets/images/work/free-to-game/freeToGame_details.jpg"
+            "https://res.cloudinary.com/counditai/image/upload/v1683705066/nissfolio/works/free-to-game/free-to-game-homepage_euh4eg.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705067/nissfolio/works/free-to-game/freeToGame_user_xezs2i.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705066/nissfolio/works/free-to-game/freeToGame_login_nhy1ee.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705068/nissfolio/works/free-to-game/freeToGame_list_szngcs.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705066/nissfolio/works/free-to-game/freeToGame_details_sjq2fj.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705068/nissfolio/works/free-to-game/freeToGame_user_home_qhicnv.jpg"
         ]
     },
     {
@@ -50,12 +50,12 @@
         },
         "url": "https://itai-nissan.github.io/Mister-Bit-Ang/signup",
         "git": "https://github.com/Itai-Nissan/Mister-Bit-Ang",
-        "mainImg": "assets/images/work/mister-bit/mister-bit-homepage.jpg",
+        "mainImg": "https://res.cloudinary.com/counditai/image/upload/v1683703516/nissfolio/mister-bit-homepage_rb3j71.jpg",
         "images": [
-            "assets/images/work/mister-bit/misterBit_user_home.jpg",
-            "assets/images/work/mister-bit/misterBit_statistics.jpg",
-            "assets/images/work/mister-bit/misterBit_moves.jpg",
-            "assets/images/work/mister-bit/misterBit_home.jpg"
+            "https://res.cloudinary.com/counditai/image/upload/v1683705063/nissfolio/works/mister-bit/misterBit_user_home_vg2wkx.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705063/nissfolio/works/mister-bit/misterBit_statistics_efykgk.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705063/nissfolio/works/mister-bit/misterBit_moves_ipcnbb.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1683705061/nissfolio/works/mister-bit/mister-bit-homepage_w0hl8l.jpg"
         ]
     }
 ]

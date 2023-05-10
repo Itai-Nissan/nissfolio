@@ -29,7 +29,7 @@
             </transition>
         </section>
         <v-parallax
-            src="https://res.cloudinary.com/counditai/image/upload/v1683703502/nissfolio/pexels-kyle-roxas-2138922_byomsw.jpg"></v-parallax>
+            src="https://res.cloudinary.com/counditai/image/upload/v1683704967/nissfolio/pexels-kyle-roxas-2138922-min_cys9kq.jpg"></v-parallax>
 
     </section>
 </template>

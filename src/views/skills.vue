@@ -8,7 +8,7 @@
                 </div>
             </div>
             <div class="skills-img">
-                <v-parallax src="https://res.cloudinary.com/counditai/image/upload/v1683703284/nissfolio/pexels-pixabay-258109_m9w4jm.jpg"></v-parallax>
+                <v-parallax src="https://res.cloudinary.com/counditai/image/upload/v1683704995/nissfolio/pexels-pixabay-258109-min_k6rxf9.jpg"></v-parallax>
             </div>
         </section>
     </section>
