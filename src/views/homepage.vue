@@ -8,12 +8,12 @@
                 <transition name="fade">
                     <h3 v-if="visible">Full stack developer </h3>
                 </transition>
-                <div class="summary">
+                <div class="summary container">
                     <div class="summary-img">
                         <v-parallax
                             src="https://res.cloudinary.com/counditai/image/upload/v1683703272/nissfolio/pexels-johannes-plenio-1114891-min_we8ogo.jpg"></v-parallax>
                     </div>
-                    <div class="summary-info">
+                    <div class="summary-info container">
                         <p>
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem animi corporis
                             laudantium dolorem
@@ -36,9 +36,9 @@
         <section class="skills-bg">
             <skills :skills="skills"></skills>
         </section>
-        <section class="contact-bg">
+        <!-- <section class="contact-bg">
             <contact></contact>
-        </section>
+        </section> -->
     </div>
 </template>
 
