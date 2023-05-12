@@ -7,7 +7,7 @@
 
     .contact {
         color: $contact-nav;
-        
+
         h1 {
             text-align: center;
             font-size: 4em;
@@ -120,20 +120,6 @@
             }
 
         }
-
-        // .contact-bg {
-        //     position: absolute;
-        //     top: 0;
-        //     right: 0;
-        //     z-index: 0;
-
-        //     img {
-        //         height: 100vh;
-        //         width: 100vw;
-        //         object-fit: cover;
-        //     }
-        // }
-
     }
 }
 
@@ -163,31 +149,136 @@
 @media screen and (max-width: 767px) {}
 
 @media screen and (max-width: 575px) {
-    .contact {
-        margin-inline-start: 0em;
+    .contact-bg {
+        // background-color: $contact-nav-back;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        min-height: 900px;
 
-        h1 {
-            font-size: 4em;
-            margin-block-end: 0.1em;
 
-        }
+        .contact {
+            // color: $contact-nav;
+            // height: 100%;
 
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-
-            .v-alert {
-                top: 50%;
+            h1 {
+                // text-align: center;
+                // font-size: 4em;
+                // text-shadow: 1px 2px 1px rgb(0 0 0 / 30%);
+                // background: linear-gradient(to top, $contact-nav-hover 0%, $contact-nav 50%);
+                // -webkit-background-clip: text;
+                // -webkit-text-fill-color: transparent;
+                // margin-block-start: 0.3em;
+                // margin-block-end: 0.3em;
+                // z-index: 180;
             }
 
+            .contact-wrapper {
+                height: 700px;
+                // border-radius: 50px;
+                // display: flex;
+                // flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
 
-            svg {
-                margin-inline-end: .5em
-            }
+                .contact-info {
+                    min-width: 100%;
+                    // z-index: 180;
+                    // position: absolute;
 
-            .contact-card {
-                max-width: 100%;
-                padding-inline-start: 1em;
+                    .v-alert {
+                        // position: absolute;
+                        // top: 20%;
+                        // left: 50%;
+                        // transform: translate(-50%, -50%);
+                        // display: flex;
+                        // justify-content: center;
+                        // width: 300px;
+                        // color: $contact-nav-hover;
+                        // background-color: $contact-nav;
+                    }
+
+                    p {
+                        // font-weight: 400;
+                        // line-height: 1.4em;
+                    }
+
+                    span {
+                        // font-family: RobotoMono-Bold;
+                        // font-weight: 400;
+                        // line-height: 1.4em;
+                    }
+
+                    a {
+                        // width: 100%;
+                        // font-weight: 400;
+                        // line-height: 1.4em;
+                    }
+
+                    svg {
+                        // margin-inline-end: .5em
+                    }
+
+                    .contact-card {
+                        min-width: 100%;
+                        // display: flex;
+                        // align-items: center;
+                        // min-height: 3em;
+                        // border-width: 2px;
+                        // margin-block-end: 1em;
+                        // padding-inline-start: 1em;
+                        // border-color: #a3a3a3;
+                        // border-style: solid;
+                        // border-radius: 50px 50px 50px 50px;
+                        // background-color: $contact-nav-hover;
+                    }
+
+                    .email-card {
+                        // flex-direction: column;
+
+                        .contact-form {
+                            // width: 80%;
+                            // padding-block-end: 1em;
+
+                            .v-btn {
+                                // color: $contact-nav;
+                                // background-color: $contact-nav-hover;
+                            }
+                        }
+
+                        .card-header {
+                            // width: 100%;
+                            // margin-block-start: 1em;
+                            // margin-block-end: 1em;
+                        }
+
+                        textarea {
+                            // resize: none;
+                        }
+                    }
+                }
+
+                .contact-img {
+                    // z-index: 2;
+                    width: 100%;
+                    height: 100%;
+
+                    .v-img__img{
+                        
+                    } 
+                    .v-img__img--cover{
+                        
+                    }
+                    .v-img {
+                        height: 100%;
+                        // border-radius: 50px;
+                    }
+                    
+                    img {
+                        // position: absolute;
+                    }
+                }
+
             }
         }
     }

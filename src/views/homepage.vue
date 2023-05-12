@@ -36,9 +36,9 @@
         <section class="skills-bg">
             <skills :skills="skills"></skills>
         </section>
-        <!-- <section class="contact-bg">
+        <section class="contact-bg">
             <contact></contact>
-        </section> -->
+        </section>
     </div>
 </template>
 
