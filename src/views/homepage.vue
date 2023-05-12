@@ -30,15 +30,20 @@
                 </div>
             </div>
         </section>
-        <section class="work-bg">
-            <work :works="works"></work>
-        </section>
-        <section class="skills-bg">
-            <skills :skills="skills"></skills>
-        </section>
-        <section class="contact-bg">
+        <v-lazy :min-height="200" :options="{ 'threshold': 0.5 }" transition="fade-transition">
+            <section class="work-bg">
+                <work :works="works"></work>
+            </section>
+        </v-lazy>
+        <v-lazy :min-height="200" :options="{ 'threshold': 0.5 }" transition="fade-transition">
+            <section class="skills-bg">
+                <skills :skills="skills"></skills>
+            </section>
+        </v-lazy>
+
+        <!-- <section class="contact-bg">
             <contact></contact>
-        </section>
+        </section> -->
     </div>
 </template>
 
