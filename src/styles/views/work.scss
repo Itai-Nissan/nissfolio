@@ -29,7 +29,6 @@
             align-items: center;
             justify-content: center;
 
-
             .works {
                 background-color: $work-nav-hover;
                 z-index: 3;
@@ -37,7 +36,6 @@
                 flex-direction: column;
                 align-items: center;
                 position: absolute;
-
             }
 
             .works-img {
@@ -68,22 +66,24 @@
     .work-bg {
 
         .work {
+            height: 100%;
 
             h1 {
                 // font-size: 4vw;
             }
 
             .works-wrapper {
-                margin-block-end: 5em;
+                margin-block-start: 1em;
                 height: 1100px;
 
                 .works {
-                    position: relative;
+                    // height: 100%;
+                    position: absolute;
                     z-index: 4;
                     background-color: transparent;
 
                     .to-work-list {
-                        position: absolute;
+                        // position: absolute;
                     }
                 }
 

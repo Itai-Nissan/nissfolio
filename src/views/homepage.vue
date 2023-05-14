@@ -40,10 +40,11 @@
                 <skills :skills="skills"></skills>
             </section>
         </v-lazy>
-
-        <!-- <section class="contact-bg">
-            <contact></contact>
-        </section> -->
+        <!-- <v-lazy :min-height="200" :options="{ 'threshold': 0.5 }" transition="fade-transition"> -->
+            <section class="contact-bg">
+                <contact></contact>
+            </section>
+        <!-- </v-lazy> -->
     </div>
 </template>
 

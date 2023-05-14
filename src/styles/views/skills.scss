@@ -9,7 +9,7 @@
         flex-direction: column;
         align-items: center;
         z-index: 180;
-        height: 100vh;
+        height: 900px;
 
         h1 {
             font-size: 4em;
@@ -112,6 +112,7 @@
             .skills-img {
                 z-index: 2;
                 width: 100%;
+                height: 700px;
 
                 .v-img {
                     border-radius: 50px;
