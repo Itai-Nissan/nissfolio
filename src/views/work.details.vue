@@ -43,16 +43,17 @@
             <div class="work-details-media">
                 <section class="details-carousel">
                     <video v-if="currentWork.vidUrl" controls autoplay :src=currentWork.vidUrl></video>
-                    <v-carousel show-arrowsshow-arrows-on-hover hide-delimiter-background height="auto">
-
-                        <v-carousel-item v-for="(img, i) in currentWork.images" :key="i"
-                            reverse-transition="fade-transition" transition="fade-transition">
-                            <a :href=img target="_blank"><v-img class="carousel-img" :src="img" alt=""></v-img></a>
-                            <v-img class="loader" v-if="img"
-                                src="https://res.cloudinary.com/counditai/image/upload/v1683703507/nissfolio/ajax-loading-icon-18_mfegpc.gif"
-                                alt=""></v-img>
-                        </v-carousel-item>
-                    </v-carousel>
+                    <div class="carousel">
+                        <v-carousel show-arrowsshow-arrows-on-hover hide-delimiter-background height="auto">
+                            <v-carousel-item v-for="(img, i) in currentWork.images" :key="i"
+                                reverse-transition="fade-transition" transition="fade-transition">
+                                <a :href=img target="_blank"><v-img class="carousel-img" :src="img" alt=""></v-img></a>
+                                <v-img class="loader" v-if="img"
+                                    src="https://res.cloudinary.com/counditai/image/upload/v1683703507/nissfolio/ajax-loading-icon-18_mfegpc.gif"
+                                    alt=""></v-img>
+                            </v-carousel-item>
+                        </v-carousel>
+                    </div>
                 </section>
             </div>
         </section>
