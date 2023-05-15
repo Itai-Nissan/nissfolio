@@ -26,7 +26,7 @@
                 </div>
             </div>
         </section>
-        <v-lazy :min-height="200" :options="{ 'threshold': 0.5 }" transition="fade-transition">
+        <v-lazy :min-height="200" :options="{ 'threshold': 3.5 }" transition="fade-transition">
             <section class="work-bg">
                 <work :works="works"></work>
             </section>
