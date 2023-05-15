@@ -15,16 +15,12 @@
                     </div>
                     <div class="summary-info container">
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem animi corporis
-                            laudantium dolorem
-                            asperiores
-                            voluptates vel quam aperiam voluptatem. Veritatis deserunt beatae laboriosam vero consequuntur
-                            magni,
-                            autem
-                            quos iusto numquam eligendi cupiditate quod tempore quae, recusandae corrupti fugiat nemo
-                            suscipit
-                            unde
-                            laudantium expedita! Inventore dolorum ratione eum nostrum tempora ex.
+                            Experienced full-stack developer proficient in modern JavaScript, HTML, and CSS. Skilled in
+                            utilizing front-end frameworks such as Vue, React and Angular, as well as back-end frameworks like
+                            Node.js and ExpressJs. Proficient in working with libraries such as Vuetify and Material UI,
+                            delivering visually appealing and responsive web applications. Strong expertise in database
+                            management and RESTful API integration. A versatile developer ready to bring innovative
+                            solutions to complex projects.
                         </p>
                     </div>
                 </div>
@@ -40,11 +36,11 @@
                 <skills :skills="skills"></skills>
             </section>
         </v-lazy>
-        <!-- <v-lazy :min-height="200" :options="{ 'threshold': 0.5 }" transition="fade-transition"> -->
+        <v-lazy :min-height="200" :options="{ 'threshold': 0.5 }" transition="fade-transition">
             <section class="contact-bg">
                 <contact></contact>
             </section>
-        <!-- </v-lazy> -->
+        </v-lazy>
     </div>
 </template>
 
