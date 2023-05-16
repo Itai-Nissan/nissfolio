@@ -75,8 +75,7 @@ export default {
         const { id } = this.$route.params
         this.$store.dispatch({ type: 'getWorkById', id })
         this.onSetNavClass(this.navClass)
-        window.scrollTo(0, 0);
-
+        window.scrollTo(0, 0)
     },
     mounted() {
         this.currentWork = this.$store.getters.work
