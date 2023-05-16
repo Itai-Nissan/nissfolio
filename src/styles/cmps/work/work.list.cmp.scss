@@ -14,8 +14,6 @@
 
     @media screen and (max-width: 575px) {
 
-        // .to-work-list {
-        //     position: absolute;
             .work-list {
                 display: grid;
                 grid-template-columns: 1fr;
@@ -24,4 +22,3 @@
                 padding-block-end: 0.5em;
             }
         }
-    // }

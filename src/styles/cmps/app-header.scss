@@ -1,161 +1,161 @@
-.app-header {
-    height: 10vh;
-    padding-block-start: 4vh;
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-items: center;
-    z-index: 280;
+// .app-header {
+//     height: 10vh;
+//     padding-block-start: 4vh;
+//     position: absolute;
+//     display: grid;
+//     grid-template-columns: 1fr;
+//     align-items: center;
+//     justify-items: center;
+//     z-index: 280;
 
-    .nav-bar {
+//     .nav-bar {
 
-        ul:not(:last-child) {
-            margin-inline-end: 1em;
+//         ul:not(:last-child) {
+//             margin-inline-end: 1em;
 
-        }
+//         }
 
-        ul {
-            a {
-                -webkit-transition: color 0.6s;
-            }
-        }
-    }
+//         ul {
+//             a {
+//                 -webkit-transition: color 0.6s;
+//             }
+//         }
+//     }
 
-    nav {
-        display: flex;
-        font-family: RobotoMono-Bold;
-        font-size: 1.1rem;
-        letter-spacing: -1px;
-    }
+//     nav {
+//         display: flex;
+//         font-family: RobotoMono-Bold;
+//         font-size: 1.1rem;
+//         letter-spacing: -1px;
+//     }
 
-    .header-logo {
-        position: absolute;
-        right: 0;
-        top: 1.2em;
-        // color: $home-nav;
-    }
+//     .header-logo {
+//         position: absolute;
+//         right: 0;
+//         top: 1.2em;
+//         // color: $home-nav;
+//     }
 
-    .drop-down {
-        display: none;
+//     .drop-down {
+//         display: none;
 
-        .v-app-bar-nav-icon {
-            position: absolute;
-            top: 10px;
-            left: 30px;
-            color: $home-nav;
-            background: none;
-        }
+//         .v-app-bar-nav-icon {
+//             position: absolute;
+//             top: 10px;
+//             left: 30px;
+//             color: $home-nav;
+//             background: none;
+//         }
 
-        .v-navigation-drawer {
+//         .v-navigation-drawer {
 
-            nav {
-                flex-direction: column;
+//             nav {
+//                 flex-direction: column;
 
-                .router-link-exact-active {
-                    border-bottom: 0.5px solid $details-nav;
-                }
-            }
+//                 .router-link-exact-active {
+//                     border-bottom: 0.5px solid $details-nav;
+//                 }
+//             }
 
-            ul {
-                margin-block-start: 1em;
-                margin-inline-start: 1em;
-                font-size: 1.2em;
-                color: $skills-nav-hover
-            }
-        }
-    }
+//             ul {
+//                 margin-block-start: 1em;
+//                 margin-inline-start: 1em;
+//                 font-size: 1.2em;
+//                 color: $skills-nav-hover
+//             }
+//         }
+//     }
 
-    // HOME NAV
-    .home-nav:hover a:not(:hover) {
-        color: $home-nav-hover;
-    }
+//     // HOME NAV
+//     .home-nav:hover a:not(:hover) {
+//         color: $home-nav-hover;
+//     }
 
-    .home-nav {
-        color: $home-nav;
+//     .home-nav {
+//         color: $home-nav;
 
-        .router-link-exact-active {
-            border-bottom: 0.5px solid $home-nav;
-        }
-    }
+//         .router-link-exact-active {
+//             border-bottom: 0.5px solid $home-nav;
+//         }
+//     }
 
-    // SKILLS
-    .skills-nav:hover a:not(:hover) {
-        color: $skills-nav-hover;
-    }
+//     // SKILLS
+//     .skills-nav:hover a:not(:hover) {
+//         color: $skills-nav-hover;
+//     }
 
-    .skills-nav {
-        // color: #fce3b1;
-        color: $skills-nav;
+//     .skills-nav {
+//         // color: #fce3b1;
+//         color: $skills-nav;
 
-        .router-link-exact-active {
-            border-bottom: 0.5px solid $skills-nav;
-        }
+//         .router-link-exact-active {
+//             border-bottom: 0.5px solid $skills-nav;
+//         }
 
-    }
+//     }
 
-    // WORK
-    .work-nav:hover a:not(:hover) {
-        color: $work-nav-hover;
-    }
+//     // WORK
+//     .work-nav:hover a:not(:hover) {
+//         color: $work-nav-hover;
+//     }
 
-    .work-nav {
-        color: $work-nav;
+//     .work-nav {
+//         color: $work-nav;
 
-        .router-link-exact-active {
-            border-bottom: 0.5px solid $work-nav;
-        }
+//         .router-link-exact-active {
+//             border-bottom: 0.5px solid $work-nav;
+//         }
 
-    }
+//     }
 
-    // CONTACT
-    .contact-nav:hover a:not(:hover) {
-        color: $contact-nav-hover;
-    }
+//     // CONTACT
+//     .contact-nav:hover a:not(:hover) {
+//         color: $contact-nav-hover;
+//     }
 
-    .contact-nav {
-        color: $contact-nav;
+//     .contact-nav {
+//         color: $contact-nav;
 
-        .router-link-exact-active {
-            border-bottom: 0.5px solid $contact-nav;
-        }
-    }
+//         .router-link-exact-active {
+//             border-bottom: 0.5px solid $contact-nav;
+//         }
+//     }
 
-    // DETAILS
-    .details-nav:hover a:not(:hover) {
-        color: $details-nav-hover;
-    }
+//     // DETAILS
+//     .details-nav:hover a:not(:hover) {
+//         color: $details-nav-hover;
+//     }
 
-    .details-nav {
-        color: $details-nav;
+//     .details-nav {
+//         color: $details-nav;
 
-        .router-link-exact-active {
-            border-bottom: 0.5px solid $details-nav;
-        }
-    }
+//         .router-link-exact-active {
+//             border-bottom: 0.5px solid $details-nav;
+//         }
+//     }
 
-}
+// }
 
-@media screen and (max-width: 1140px) {}
+// @media screen and (max-width: 1140px) {}
 
-@media screen and (max-width: 990px) {}
+// @media screen and (max-width: 990px) {}
 
-@media screen and (max-width: 767px) {}
+// @media screen and (max-width: 767px) {}
 
-@media screen and (max-width: 575px) {
-    .app-header {
-        position: initial;
+// @media screen and (max-width: 575px) {
+//     .app-header {
+//         position: initial;
 
-        .header-logo {
-            right: 10px;
-        }
+//         .header-logo {
+//             right: 10px;
+//         }
 
-        .nav-bar {
-            display: none;
-        }
+//         .nav-bar {
+//             display: none;
+//         }
 
-        .drop-down {
-            display: block;
-        }
-    }
-}
+//         .drop-down {
+//             display: block;
+//         }
+//     }
+// }
