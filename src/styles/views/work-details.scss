@@ -182,11 +182,17 @@
 
                         .loader {
                             position: absolute;
-                            top: 50%;
+                            top: 70%;
                             left: 50%;
                             transform: translate(-50%, -50%);
                             width: 500px;
                             z-index: 1;
+
+                            .v-img__img--contain {
+                                width: 100%;
+                                height: 25%;
+                            }
+
                         }
 
                         .v-window__container {
@@ -228,6 +234,27 @@
 
 @media screen and (max-width: 1140px) {
     .work-details {
+        width: 100%;
+
+        .work-details-tech {
+            height: 220px;
+
+            .card {
+                margin-inline-end: 1em;
+                min-width: 70%;
+            }
+
+            .specs-url {
+
+                .url {
+
+                    a {
+                        margin-block-end: 1em;
+                    }
+                }
+            }
+        }
+
         .work-details-media {
 
             .details-carousel {
@@ -312,28 +339,7 @@
     .work-details-bg {
 
         .work-details {
-
-            // h1 {
-            // }
-
-            // h3 {
-            //     color: $details-nav-hover;
-            // }
-
-            // h4 {
-            //     font-family: Julee;
-            //     font-weight: 800;
-            // }
-
-            // h5 {
-            //     color: $details-nav-hover;
-            //     padding: 0 0.5em 0 .5em;
-
-            // }
-
-            // p {
-            //     display: flex;
-            // }
+            
 
             .work-details-header {
                 margin-inline-start: 1em;
@@ -353,6 +359,7 @@
                 .work-details-tech {
                     flex-direction: column;
                     align-items: center;
+                    justify-content: stretch;
                     width: 100%;
                     padding-block-start: 1em;
 
@@ -420,7 +427,6 @@
                             height: 100%;
                         }
 
-
                         .v-window {
 
 
@@ -449,12 +455,8 @@
 
                         img {}
                     }
-
                 }
-
             }
-
         }
     }
-
 }
