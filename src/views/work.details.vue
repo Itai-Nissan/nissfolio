@@ -48,7 +48,7 @@
                             <v-carousel-item v-for="(img, i) in currentWork.images" :key="i"
                                 reverse-transition="fade-transition" transition="fade-transition">
                                 <a :href=img target="_blank"><v-img class="carousel-img" :src="img" alt=""></v-img></a>
-                                <div v-if="img" class="loader">
+                                <div class="loader">
                                     <v-img
                                         src="https://res.cloudinary.com/counditai/image/upload/v1683703507/nissfolio/ajax-loading-icon-18_mfegpc.gif"
                                         alt=""></v-img>

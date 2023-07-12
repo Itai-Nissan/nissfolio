@@ -6,7 +6,7 @@
             "react",
             "angularjs"
         ],
-        "desc": "Knowledge and experience writing single-page-applications using Vue.js, React.js and Angular. state managment such as vite, Redux and NgRx, and libraries such as Axios, bootstrap, vutify, element plus, and more"
+        "desc": "Knowledge and experience writing single-page-applications using Vue.js, React.js and Angular. state managment such as vite, Redux and NgRx, and libraries such as Axios, bootstrap, vutify, element plus, and more. Commit projects using git."
     },
     {
         "title": "Backend",
@@ -14,7 +14,7 @@
             "nodejs",
             "git"
         ],
-        "desc": "Experience with building apps using nodejs, and libraries such as expressjs, parser, cryptr and more. Commit projects using git."
+        "desc": "Experience with building apps using nodejs, and libraries such as expressjs, parser, cryptr and more. Deploy using Heroku and Render"
     },
     {
         "title": "Data-base",
