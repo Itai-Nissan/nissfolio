@@ -4,6 +4,10 @@
         justify-content: space-evenly;
         z-index: 180;
         padding-block-end: 0.5em;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
     }
 
     @media screen and (max-width: 1140px) {}
@@ -14,11 +18,16 @@
 
     @media screen and (max-width: 575px) {
 
-            .work-list {
-                display: grid;
-                grid-template-columns: 1fr;
-                justify-content: space-evenly;
-                z-index: 180;
-                padding-block-end: 0.5em;
-            }
+        .work-list {
+            position: relative;
+            // top: 0;
+            // right: 0;
+            // transform: none;
+    
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: space-evenly;
+            z-index: 180;
+            padding-block-end: 0.5em;
         }
+    }

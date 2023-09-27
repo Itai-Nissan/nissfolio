@@ -23,7 +23,7 @@ v-wave="{
             <section v-show="expand" class="secondary work-preview">
                 <Router-link :to="`/work-details/${work._id}`">
                     <div class="work-card" outlined>
-                        <img class="" :src=work.mainImg>
+                        <img class="" :src=work.images[0]>
                         <div class="card-info">
                             <v-card-title>{{ workTitle }}</v-card-title>
                             <div class="info-text-card">

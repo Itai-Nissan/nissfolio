@@ -13,6 +13,7 @@
         "vidUrl": "https://res.cloudinary.com/counditai/video/upload/v1684152049/nissfolio/works/quiderr/quiderr_present_tosram.mp4",
         "mainImg": "https://res.cloudinary.com/counditai/image/upload/v1683703514/nissfolio/quiderr-homepage_ere9rc.jpg",
         "images": [
+            "https://res.cloudinary.com/counditai/image/upload/v1683703514/nissfolio/quiderr-homepage_ere9rc.jpg",
             "https://res.cloudinary.com/counditai/image/upload/v1683705065/nissfolio/works/quiderr/quiderr_home_zwbmmx.jpg",
             "https://res.cloudinary.com/counditai/image/upload/v1683705063/nissfolio/works/quiderr/quiderr_explore_lvan1y.jpg",
             "https://res.cloudinary.com/counditai/image/upload/v1683705064/nissfolio/works/quiderr/quiderr_gig_details_awnfbz.jpg",
@@ -42,6 +43,27 @@
     },
     {
         "_id": "3",
+        "title": "cutting-board",
+        "category": "Recipes book",
+        "tech": {
+            "frontend": "React, Material ui, Redux",
+            "backend": "Node.Js, Express.Js, Cors, cloudinary",
+            "data": "MongoDb"
+        },
+        "url": "https://cutting-board.onrender.com",
+        "git": "https://github.com/Itai-Nissan/FoodCourt",
+        "mainImg": "https://res.cloudinary.com/counditai/image/upload/v1695800846/nissfolio/works/cutting-board/cutting-board-small_gx1bea.jpg",
+        "images": [
+            "https://res.cloudinary.com/counditai/image/upload/v1695801659/nissfolio/works/cutting-board/cutting-board-main_mjy0oe.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1695800464/nissfolio/works/cutting-board/cutting-board-explore_jzt5en.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1695800463/nissfolio/works/cutting-board/cutting-board-explore-mobile_agewtq.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1695800464/nissfolio/works/cutting-board/cutting-board-details_np9ehn.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1695800463/nissfolio/works/cutting-board/cutting-board-edit_fl5dep.jpg",
+            "https://res.cloudinary.com/counditai/image/upload/v1695800639/nissfolio/works/cutting-board/cutting-board-edit-preview_q37l80.jpg"
+        ]
+    },
+    {
+        "_id": "4",
         "title": "mister-bit",
         "category": "digital-wallet",
         "tech": {
